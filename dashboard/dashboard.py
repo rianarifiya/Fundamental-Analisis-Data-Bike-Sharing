@@ -7,8 +7,8 @@ import streamlit as st
 sns.set_theme(style='darkgrid')
 
 # Load Data
-day_df = pd.read_csv("df_day_clean.csv")
-hour_df = pd.read_csv("df_hour_clean.csv")
+day_df = pd.read_csv("dashboard/df_day_clean.csv")
+hour_df = pd.read_csv("dashboard/df_hour_clean.csv")
 
 # Pastikan kolom tanggal bertipe datetime
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])
